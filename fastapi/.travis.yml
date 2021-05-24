@@ -1,0 +1,19 @@
+lenguage: python
+
+python:
+  - '3.9'
+git:
+  depth: 3
+  
+script:
+  - yarn test
+deploy:
+  provider: pages
+  skip_cleanup: true
+  keep_history: true
+  github_token: $GITHUB_TOKEN
+  local_dir: dist/
+  target_branch: gh-page
+  commit_message: 'Deploy del proyecto'
+  on:
+    branch: master
