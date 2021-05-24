@@ -7,8 +7,6 @@ install:
 git:
   depth: 3
   
-script:
-  - pytest
 deploy:
   provider: pages
   skip_cleanup: true
