@@ -6,6 +6,8 @@ install:
   - pip install -r requirements.txt
 git:
   depth: 3
+
+edge: true
   
 script:
   - pytest test.py
