@@ -1,1 +1,1 @@
-heroku web: uvicorn app:app 
+web: python uvicorn --host 0.0.0.0 app:app 
