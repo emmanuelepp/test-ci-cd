@@ -1,12 +1,12 @@
-from fastapi import FastAPI
-import uvicorn
+from flask import Flask
 
-app = FastAPI()
+app = Flask(__name__)
 
 
-@app.get('/')
-async def hello():
+@app.route('/')
+def hello():
     return {"message": "Hello from travis and heroku CI/CD"}
 
+
 if __name__ == "__main__":
-    uvicorn.run(app)
+    app.run()
