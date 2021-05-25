@@ -1,8 +1,8 @@
-import pytest
+
+def name():
+    result = "Rick Sanchez"
+    return result
 
 
-def test():
-    x = 5
-    y = 6
-    assert x+1 == y, "test failed"
-    assert x == y, "test failed"
+def test_name():
+    assert name() == "Rick Sanchez"
