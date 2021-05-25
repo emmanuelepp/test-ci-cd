@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+import uvicorn
 
 app = FastAPI()
 
@@ -6,3 +7,6 @@ app = FastAPI()
 @app.get('/')
 async def hello():
     return {"message": "Hello from travis and heroku CI/CD"}
+
+if __name__ == "__main__":
+    uvicorn.run(app)
