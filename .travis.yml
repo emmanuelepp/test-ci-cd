@@ -8,13 +8,13 @@ git:
   depth: 3
 
 edge: true
-
-tags: true
   
 script:
   - pytest test.py
 deploy:
-  provider: pages
+  provider: heroku
+  api_key: 3d62ba6b-adfe-4f44-8ee3-8d3bf10f2b47
+  app: test-travis-app
   skip_cleanup: true
   keep_history: true
   github_token: $GITHUB_TOKEN
@@ -22,4 +22,5 @@ deploy:
   target_branch: test-travis-heroku
   commit_message: 'Deploy del proyecto'
   on:
-    branch: master
+    branch: test-travis-heroku
+    repo: emmanuelepp/test-ci-cd
