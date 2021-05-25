@@ -19,7 +19,7 @@ deploy:
   keep_history: true
   github_token: $GITHUB_TOKEN
   local_dir: /
-  target_branch: test-travis-heroku
+  target_branch: test-ci-cd
   commit_message: 'Deploy del proyecto'
   on:
     branch: main
