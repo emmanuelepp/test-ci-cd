@@ -20,4 +20,4 @@ deploy:
   target_branch: test-travis-heroku
   commit_message: 'Deploy del proyecto'
   on:
-    branch: master
+    branch: test-travis-heroku
