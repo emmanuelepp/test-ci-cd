@@ -8,5 +8,5 @@ app = FastAPI()
 async def hello():
     return {"message": "Hello from travis and heroku CI/CD"}
 
-if __name__ == "__main__":
-    uvicorn.run(app)
+# if __name__ == "__main__":
+#     uvicorn.run(app)
