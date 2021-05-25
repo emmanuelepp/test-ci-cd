@@ -18,4 +18,4 @@ deploy:
   target_branch: test-ci-cd
   commit_message: 'Deploy del proyecto'
   on:
-    branch: main
+    branch: master
