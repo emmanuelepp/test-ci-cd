@@ -9,4 +9,4 @@ async def hello():
     return {"message": "Hello from travis and heroku CI/CD"}
 
 if __name__ == "__main__":
-    uvicorn.run(app)
+    uvicorn.run(app, host='0.0.0.0')
