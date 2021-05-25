@@ -1,1 +1,1 @@
-web: uvicorn app:app --reload
+heroku web: uvicorn app:app 
