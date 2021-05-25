@@ -13,7 +13,7 @@ script:
   - pytest test.py
 deploy:
   provider: heroku
-  api_key: 3d62ba6b-adfe-4f44-8ee3-8d3bf10f2b47
+  api_key: $API_HEROKU
   app: test-travis-app
   skip_cleanup: true
   keep_history: true
