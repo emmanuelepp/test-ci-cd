@@ -22,5 +22,5 @@ deploy:
   target_branch: test-travis-heroku
   commit_message: 'Deploy del proyecto'
   on:
-    branch: test-travis-heroku
+    branch: main
     repo: emmanuelepp/test-ci-cd
