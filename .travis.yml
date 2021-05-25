@@ -14,7 +14,7 @@ script:
 deploy:
   provider: heroku
   api_key: 3d62ba6b-adfe-4f44-8ee3-8d3bf10f2b47
-  app: test-ci-cd
+  app: test-travis-app
   skip_cleanup: true
   keep_history: true
   github_token: $GITHUB_TOKEN
